@@ -37,7 +37,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 <input type="radio" name="selShow" id="updateSel"  value="update" /> Update Inventory Quantity
 
 
-<form method="post" style="display:none" id="calculateForm" name="calculateform" action="gripUpdateInventory.php" />
+<form method="post"  id="calculateForm" name="calculateform" action="gripUpdateInventory.php" />
 <header>
 <br>
 Calulate Total Sales Price
@@ -57,14 +57,21 @@ while($row = $result->fetch_assoc()) {
 echo "</select>";
 
 ?>
-
+<form>
+  <br>
 Price Each:
+<input type="textbox" name="totalPriceOutput"></input>
+</form>
 
+<form>
 Quantity:
-
 <input type="number" name="calculateQuantity" />
-Total Price:
-<input type="textbox" name="priceOutput"></input>
+</form>
+
+<input type="button"name="calcTotalPrice" value="Calculate Total Price"/>
+
+<input type="textbox" name="totalPriceOutput"></input>
+<br>
 <input type="submit" name="Submit" value="Sell & Update" />
 
 </form>
