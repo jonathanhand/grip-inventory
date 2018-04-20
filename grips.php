@@ -57,16 +57,15 @@ while($row = $result->fetch_assoc()) {
 echo "</select>";
 
 ?>
-<form>
   <br>
 Price Each:
 <input type="textbox" name="totalPriceOutput"></input>
-</form>
 
-<form>
+
+
 Quantity:
 <input type="number" name="calculateQuantity" />
-</form>
+
 
 <input type="button"name="calcTotalPrice" value="Calculate Total Price"/>
 
