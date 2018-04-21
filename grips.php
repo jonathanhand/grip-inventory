@@ -59,17 +59,14 @@ echo "</select>";
 ?>
   <br>
 Price Each:
-<input type="textbox" name="totalPriceOutput"></input>
-
-
-
+<input type="textbox" name="totalPriceOutput" />
 Quantity:
 <input type="number" name="calculateQuantity" />
 
 
 <input type="button"name="calcTotalPrice" value="Calculate Total Price"/>
 
-<input type="textbox" name="totalPriceOutput"></input>
+<input type="textbox" name="totalPriceOutput"/>
 <br>
 <input type="submit" name="Submit" value="Sell & Update" />
 
